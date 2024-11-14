@@ -23,6 +23,7 @@ export const styles = StyleSheet.create({
         borderColor: colors.secondary,
         marginBottom: 40,
         paddingLeft: 10,
+        borderRadius: 30
     },
     botao: {
         width: '100%',
