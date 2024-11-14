@@ -35,18 +35,18 @@ export function MenuBottomTabs() {
         }}>
             <Tab.Screen name="Inputs" component={ScreenInputs}
                 options={{
-                    title:"Entrada de Dados",
+                    title:"Entrada das Coordenadas",
                     tabBarIcon: () => (
-                        <Feather name="search" size={27} color="white" />
+                        <Entypo name="laptop" size={27} color="white" />
                     )
                 }}
             />
 
             <Tab.Screen name="Mapa" component={ScreenMapa}
                 options={{
-                    title:"Posiciona Mapa",
+                    title:"Montagem do Mapa",
                     tabBarIcon: () => (
-                        <Entypo name="map" size={27} color="white" />
+                        <Feather name="map" size={27} color="white" />
                     )
                 }}
             />
