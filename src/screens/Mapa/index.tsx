@@ -6,7 +6,7 @@ import { styles } from "./style";
 import { colors } from '../../styles/GlobalStyles';
 import { useRoute } from "@react-navigation/native"
 import { ICoords, MenuTabTypes } from "../../navigation/MenuBottomTabs";
-import { MaterialIcons } from "@expo/vector-icons";
+import { Feather } from "@expo/vector-icons";
 
 export function Mapa({ navigation }: MenuTabTypes) {
     const [region, setRegion] = useState<Region>();
@@ -59,10 +59,10 @@ export function Mapa({ navigation }: MenuTabTypes) {
             >
 
                 <Marker coordinate={origem as LatLng}>
-                    <MaterialIcons name="room" size={34} color={colors.primary} />               
+                    <Feather name="map-pin" size={34} color={colors.primary} />               
                 </Marker>
                 <Marker coordinate={destino as LatLng}>
-                    <MaterialIcons name="room" size={34} color={colors.primary} />  
+                    <Feather name="map-pin" size={34} color={colors.primary} />  
                 </Marker>
 
                 <Polyline strokeColor={colors.primary} strokeWidth={6} coordinates={[origem as LatLng, destino as LatLng]}></Polyline>
