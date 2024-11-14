@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colors } from "../../styles/GlobalStyles";
+import { cores } from "../../styles/cores";
 
 export const styles = StyleSheet.create({
     container: {
@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
     input: {
         height: 50,
         borderWidth: 2,
-        borderColor: colors.secondary,
+        borderColor:  cores.black,
         marginBottom: 40,
         paddingLeft: 10,
         borderRadius: 30
@@ -29,14 +29,14 @@ export const styles = StyleSheet.create({
         width: '100%',
         display: 'flex',
         alignItems: 'center',
-        backgroundColor: colors.secondary,
+        backgroundColor: cores.black,
         height: 45,
         justifyContent: 'center',
-        borderRadius: 10
+        borderRadius: 30
     },
     botaoTexto: {
         fontSize: 20,
         fontWeight: '800',
-        color: '#ffffff'
+        color: '#ffffff',
     }
 })

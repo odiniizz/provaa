@@ -1,9 +1,8 @@
 import { DrawerNavigationProp, createDrawerNavigator } from '@react-navigation/drawer';
 import { ScreenInputs ,ScreenMapa} from '../screens';
-import { MenuBottomTabs } from './MenuBottomTabs';
+import { cores } from '../styles/cores'
 
 type MenuDrawerParam = {
-    TelaInicial: undefined
     Inputs: undefined
     Mapa: undefined
 }
@@ -15,8 +14,11 @@ export type DrawerTypes = {
 export function DrawerNavigation() {
     const Drawer = createDrawerNavigator<MenuDrawerParam>();
     return (
-        <Drawer.Navigator>
-            <Drawer.Screen name="TelaInicial" component={MenuBottomTabs} />
+        <Drawer.Navigator
+        screenOptions={{
+            drawerActiveTintColor: cores.primary
+        }}
+        >
             <Drawer.Screen name="Inputs" component={ScreenInputs} />
             <Drawer.Screen name="Mapa" component={ScreenMapa} />
         </Drawer.Navigator>

@@ -2,7 +2,7 @@ import { createBottomTabNavigator, BottomTabNavigationProp } from "@react-naviga
 import { ScreenMapa, ScreenInputs} from "../screens/index";
 import { Entypo, Feather } from "@expo/vector-icons";
 import React from 'react';
-import { colors } from "../styles/GlobalStyles";
+import { cores } from "../styles/cores";
 
 export interface ICoords {
     oLat?: string
@@ -26,12 +26,12 @@ export function MenuBottomTabs() {
     const Tab = createBottomTabNavigator<TabParam>();
     return (
         <Tab.Navigator screenOptions={{
-            headerStyle: { backgroundColor: colors.primary },
+            headerStyle: { backgroundColor: cores.primary },
             headerTintColor: 'white',
-            tabBarStyle: { backgroundColor: colors.primary },
+            tabBarStyle: { backgroundColor: cores.primary },
             tabBarActiveTintColor: 'white',
             tabBarInactiveTintColor: 'white',
-            tabBarActiveBackgroundColor: colors.secondary
+            tabBarActiveBackgroundColor: cores.black
         }}>
             <Tab.Screen name="Inputs" component={ScreenInputs}
                 options={{
